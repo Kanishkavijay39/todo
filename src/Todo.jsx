@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import icon from './images/icon.png'
-// import {icon1} from './images/icon1.png'
+// import icon1 from './images/icon1.jpg'
 import './Todo.css';
 import {v4 as uuid}from 'uuid'
 
@@ -65,26 +65,34 @@ const deleteAll = () => {
 }
 
     return (
-
+       
        
     <div className="Todo">
-        {/* <img src={icon} alt="icon" /> */}
+        
+         {/* <div className='left'>
+        <img src={icon1} alt="icon" />
+        </div> */}
+        
         
         <div style={{textAlign : "center",paddingTop : "5%"}}>
-            <h1>Let's Plan &#128640;</h1>
+            <h1>Let's Plan Wisely&#9200;</h1>
         </div>
         
+        
         <div className="parent_div">
+        {/* <div style={{textAlign : "center",paddingTop : "5%"}}>
+            <h1>Let's Plan Wisely &#9200;</h1>
+        </div> */}
             <div className="child_div">
                 <div className="inputSection">
                 
                     <img src={icon} alt="icon" />
                     <br />
                     <br />
-                    <input type="text" placeholder='Enter your TODO' onChange={handleChange} value={inputData} />
+                    <input type="text" placeholder='Add new to do' onChange={handleChange} value={inputData} />
                     {
                         (toggle === false) ? (
-                            <button className="addBtn" onClick={addItem}><i className="fa fa-plus"></i></button>
+                            <button className="addBtn" onClick={addItem}><i className="fa fa-plus-square"></i></button>
                         ) : (<button className ="inputEdit" onClick={addItem} ><i className="fa fa-edit"></i></button>)
 
                     }

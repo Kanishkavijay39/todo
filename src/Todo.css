@@ -67,11 +67,33 @@ h2,h3,p{
     align-items: center;
 }
 .eachItem{
-    background-color: rgb(212, 229, 243);
+    /* background-color: rgb(212, 229, 243); */
     border-radius: 20px;
     margin: 3%;
     width:80%;
     padding:10px
+
+}
+.eachItem:nth-child(4n+1){
+    background-color: rgb(233, 243, 147);
+}
+.eachItem:nth-child(4n+2){
+    background-color: rgb(185, 231, 147);
+}
+.eachItem:nth-child(4n+3){
+    background-color: rgb(241, 199, 206);
+}
+.eachItem:nth-child(4n+4){
+    background-color: rgb(182, 210, 235);
+}
+.eachItem:nth-child(4n+5){
+    background-color: rgb(245, 235, 242);
+}
+.deleteBtn:hover{
+    color: red;
+}
+.addBtn:focus{
+    color: green;
 }
 .deleteBtn,.editBtn{
     float: right;
